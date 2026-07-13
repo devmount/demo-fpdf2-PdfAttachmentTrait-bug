@@ -82,19 +82,6 @@ It reports the file as embedded (poppler can see the catalog `/AF` entry) but
 fails to resolve its name/reference pair, and the attachment can't be listed
 or extracted (`pdfdetach -saveall` also fails the same way).
 
-## The fix used in this app
-
-This app works around the bug locally, in `app/Services/PdfTemplate.php`:
-`PdfTemplate` overrides `putAttachments()` with a corrected version that
-keeps the name string and the indirect reference as two separate array
-elements. See the doc comment on that method for the full explanation,
-including a PHP-specific gotcha: simply redeclaring `putAttachments()` isn't
-enough, since `putResources()`/`putCatalog()` (the trait methods that call
-it) resolve `private` method calls made from *within* a trait's own code
-against the trait's own declaration, not a same-named override in the
-consuming class — so those two methods had to be copied over (unmodified) as
-well, purely to make their internal calls resolve to the corrected version.
-
 ---
 
 Disclaimer: I created this demo with Claude Code.
