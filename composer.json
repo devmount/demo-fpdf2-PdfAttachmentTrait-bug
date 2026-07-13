@@ -1,0 +1,10 @@
+{
+    "name": "devmount/fpdf2-attachment-bug-demo",
+    "description": "Minimal, standalone reproduction of a bug in laurentmuller/fpdf2's PdfAttachmentTrait",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "laurentmuller/fpdf2": "4.3.10"
+    }
+}

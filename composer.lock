@@ -1,0 +1,175 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "2f6a50dfbecb6909aa3591b291a1390a",
+    "packages": [
+        {
+            "name": "elao/enum",
+            "version": "v2.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Elao/PhpEnums.git",
+                "reference": "4c9e50830bdbc03449f3eb70a938e6ef45380ca7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Elao/PhpEnums/zipball/4c9e50830bdbc03449f3eb70a938e6ef45380ca7",
+                "reference": "4c9e50830bdbc03449f3eb70a938e6ef45380ca7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "conflict": {
+                "doctrine/dbal": ">=4.0,<4.2"
+            },
+            "require-dev": {
+                "composer/semver": "^3.2",
+                "doctrine/dbal": "^3.8|^4.2",
+                "doctrine/doctrine-bundle": "^2.11",
+                "doctrine/orm": "^2.20|^3.0",
+                "ext-pdo_sqlite": "*",
+                "phpstan/phpstan": "^1.10",
+                "phpstan/phpstan-symfony": "^1.2",
+                "symfony/browser-kit": "^5.4.40|^6.4|^7.0",
+                "symfony/config": "^5.4.40|^6.4|^7.0",
+                "symfony/dependency-injection": "^5.4.40|^6.4|^7.0",
+                "symfony/filesystem": "^5.4.40|^6.4|^7.0",
+                "symfony/form": "^5.4.40|^6.4|^7.0",
+                "symfony/framework-bundle": "^5.4.40|^6.4|^7.0",
+                "symfony/http-kernel": "^5.4.40|^6.4|^7.0",
+                "symfony/phpunit-bridge": "^5.4.40|^6.4|^7.0",
+                "symfony/translation": "^5.4.40|^6.4|^7.0",
+                "symfony/var-dumper": "^5.4.40|^6.4|^7.0",
+                "symfony/var-exporter": "^5.4.40|^6.4|^7.0",
+                "symfony/yaml": "^5.4.40|^6.4|^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Bridge/Symfony/VarDumper/Resources/register_caster.php"
+                ],
+                "psr-4": {
+                    "Elao\\Enum\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Elao",
+                    "homepage": "https://www.elao.com"
+                },
+                {
+                    "name": "Maxime Steinhausser",
+                    "email": "maxime.steinhausser@gmail.com",
+                    "homepage": "https://github.com/ogizanagi"
+                }
+            ],
+            "description": "Extended PHP enums capabilities and frameworks integrations",
+            "homepage": "https://github.com/Elao/PhpEnums",
+            "keywords": [
+                "doctrine",
+                "enum",
+                "symfony"
+            ],
+            "support": {
+                "issues": "https://github.com/Elao/PhpEnums/issues",
+                "source": "https://github.com/Elao/PhpEnums/tree/v2.6.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ogizanagi",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-04-13T11:38:21+00:00"
+        },
+        {
+            "name": "laurentmuller/fpdf2",
+            "version": "4.3.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laurentmuller/fpdf2.git",
+                "reference": "b3f0ef76d5ffe16c135d877f41ec9a78d0339c27"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laurentmuller/fpdf2/zipball/b3f0ef76d5ffe16c135d877f41ec9a78d0339c27",
+                "reference": "b3f0ef76d5ffe16c135d877f41ec9a78d0339c27",
+                "shasum": ""
+            },
+            "require": {
+                "elao/enum": "^2.0",
+                "ext-gd": "*",
+                "ext-iconv": "*",
+                "ext-intl": "*",
+                "ext-mbstring": "*",
+                "ext-zlib": "*",
+                "php": "^8.3"
+            },
+            "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.0",
+                "phpunit/phpunit": "^12.0",
+                "setasign/fpdf": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "bamarni-bin": {
+                    "bin-links": false,
+                    "forward-command": true,
+                    "target-directory": "vendor-bin"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "fpdf\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Laurent Muller",
+                    "email": "bibi@bibi.nu",
+                    "homepage": "https://www.bibi.nu",
+                    "role": "Developer"
+                }
+            ],
+            "description": "FPDF 2 is a PHP class which allows to generate PDF files with pure PHP. F from FPDF stands for Free: you may use it for any kind of usage and modify it to suit your needs.",
+            "homepage": "https://github.com/laurentmuller/fpdf2",
+            "keywords": [
+                "fpdf",
+                "pdf"
+            ],
+            "support": {
+                "issues": "https://github.com/laurentmuller/fpdf2/issues",
+                "source": "https://github.com/laurentmuller/fpdf2"
+            },
+            "time": "2026-07-08T06:23:35+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^8.2"
+    },
+    "platform-dev": {},
+    "plugin-api-version": "2.9.0"
+}
